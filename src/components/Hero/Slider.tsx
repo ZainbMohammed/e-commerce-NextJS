@@ -61,7 +61,7 @@ const Slider = () => {
       {/* Slider controls */}
       <button
         type="button"
-        className="absolute top-0 left-20 z-30 flex items-center justify-center h-full px-4 cursor-pointer group bg-orange-main focus:outline-none"
+        className="absolute top-0 left-20 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={prevSlide}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  border border-orange-300 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">

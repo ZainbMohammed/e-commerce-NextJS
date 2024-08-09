@@ -1,6 +1,7 @@
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { LuShoppingCart } from "react-icons/lu";
 import { GoPerson } from "react-icons/go";
+import { LiaShoppingCartSolid } from "react-icons/lia";
 import Image from "next/image";
 import Logo from "../../../public/logo.svg";
 import module from "./header.module.css";
@@ -20,29 +21,31 @@ const Navbar = () => {
           placeholder="ابحث عما تريد"
           className="w-full text-xs  py-[11px] outline-none"
         />
-        <FaMagnifyingGlass className="text-gray-1 cursor-pointer hover:text-black" />
+        <FaMagnifyingGlass className="text-gray-400 cursor-pointer hover:text-black" />
       </div>
 
-      <div className="flex items-center justify-between gap-8">
-        <div className=" flex items-center text-gray-light gap-3">
-          <div className="w-12 h-12 flex items-center justify-center rounded-full text-slate-950 font-semibold bg-slate-100">
-            <GoPerson className="w-7 h-7 text-gray" />
+      <div className="flex items-center justify-between gap-8 ">
+        <div className=" flex items-center gap-3 ">
+          <div className="w-12 h-12 flex items-center justify-center rounded-full font-semibold bg-gray-light">
+            <GoPerson className="w-7 h-7 text-gray-500" />
           </div>
 
           <div>
-            <p className="text-sm font-medium">مرحبا بك</p>
+            <p className="text-sm font-medium text-gray-500">مرحبا بك</p>
             <button className="text-sm text-slate-700 pt-2 hover:text-blue-500">
               تسجيل دخول
             </button>
           </div>
         </div>
         <div className="flex items-center text-gray-light gap-3">
-          <div className="w-12 h-12 flex items-center justify-center rounded-full text-slate-950 font-semibold bg-slate-100">
-            <LuShoppingCart className="w-7 h-7 text-gray" />
+          <div className="w-12 h-12 flex items-center justify-center rounded-full text-slate-950 font-semibold bg-gray-light">
+            <LiaShoppingCartSolid className="w-7 h-7 text-gray-500" />
+            {/* <span className='relative flexCenter w-4 h-4 rounded-full  bg-red-600 text-white -right-11 -top-2'>2</span> */}
+
           </div>
 
           <div>
-            <p className="text-sm font-medium">سلة المشتريات</p>
+            <p className="text-sm font-medium text-gray-500">سلة المشتريات</p>
             <button className="text-sm text-slate-700 pt-2 hover:text-blue-500">
              1,200 رس
             </button>

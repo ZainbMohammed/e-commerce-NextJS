@@ -3,6 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'DIN Next LT Arabic';
+  src: url('../../public/Fonts/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  html {
+    font-family: "Tajawal", "sans-serif";
+    direction: rtl;
+  }
+
+  body {
+    background-color: #fdfeff;
+    user-select: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'DINNextLTArabic', sans-serif;
+  }
+}
+
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
