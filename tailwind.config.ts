@@ -11,15 +11,17 @@ const config: Config = {
       colors: {
         primary: '#',
         secondary: '#',
-        tertiary: '#',
+        tertiary: '#F55157',
         
         orange: {
           main: '#f58634'
+         
         },
         gray: {
+          'extr-light': '#666666',
           light: '#f8f8f8',
-
           mid: '#F7F7F7'
+        
         }
         
       },
