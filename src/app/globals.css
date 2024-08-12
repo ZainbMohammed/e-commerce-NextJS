@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'DIN Next LT Arabic';
-  src: url('../../public/Fonts/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('truetype');
+  src: url('/Fonts/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'DINNextLTArabic', sans-serif;
+    font-family: 'DIN Next LT Arabic', sans-serif;
   }
 }
 
