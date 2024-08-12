@@ -57,9 +57,9 @@ const ProductCard = ({
           <div className="mt-2 text-lg font-bold text-red-500">{price} ر.س</div>
         )}
 
-        <div className="flex justify-between w-[250px] mt-6 ">
+        <div className="flex justify-between w-[250px] mt-6 hover:text-white ">
           <button className=" w-[192px] h-[56px] border border-gray text-black text-base rounded-md hover:bg-orange-main hover:text-white transition flex justify-center items-center">
-          <LiaShoppingCartSolid className="w-7 h-7 items-center text-black m-2" />
+          <LiaShoppingCartSolid className="w-7 h-7 items-center text-black m-2 hover:text-white" />
 
             أضف للسلة
           </button>

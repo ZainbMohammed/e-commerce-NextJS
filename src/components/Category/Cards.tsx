@@ -9,7 +9,7 @@ type CardProps = {
 
 const Cards = ({ title, imageSrc, altText }: CardProps) => {
   return (
-    <div className="p-12 border rounded-sm bg-gray-mid w-[287px] h-[103px] flex items-center justify-between">
+    <div className="p-6 border rounded-sm bg-gray-mid w-[287px] h-[103px] flex items-center justify-between">
       <div className="font-bold text-[40px] text-black">{title}</div>
       <div className="flex items-center">
         <Image

@@ -126,13 +126,13 @@ const ProductGrid = () => {
   return (
     <section className="my-8 px-20">
       <div className="flex justify-between items-center mb-8">
-        <div className="container mx-auto px-4 ">
+        <div className="container mx-auto  ">
           <h2 className="text-2xl font-bold mb-4">جميع المنتجات</h2>
           <p className="text-gray-extr-light">
             تسوق احدث المنتجات المميزه المضافة جديد
           </p>
         </div>
-        <button className="w-[109px] h-[42px] ml-4 text-orange-main font-bold border border-orange-main rounded-md hover:bg-orange-main hover:text-white transition">
+        <button className="w-[109px] h-[42px] text-orange-main font-bold border border-orange-main rounded-md hover:bg-orange-main hover:text-white transition">
           عرض الكل
         </button>
       </div>

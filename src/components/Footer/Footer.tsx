@@ -91,7 +91,7 @@ const Footer = () => {
 
   return (
     <footer className='bg-white border-t'>
-      <div className='container mx-auto px-6 lg:px-20 py-10 md:py-14'>
+      <div className='container mx-auto px-6 lg:px-4 py-10 md:py-14'>
         <div className='flex flex-col md:flex-row items-start justify-between gap-8 md:gap-14'>
 
           {/* Logo Section */}
@@ -150,7 +150,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className='mt-10 border-t pt-6 text-center'>
-          <p className='text-sm text-gray-500'>© 2024 MarktJoy | All rights reserved</p>
+          <p className='text-sm text-gray-500'>2024 © الحقوق محفوظة لمنصة فاست</p>
         </div>
       </div>
     </footer>

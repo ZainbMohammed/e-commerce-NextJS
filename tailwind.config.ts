@@ -12,7 +12,7 @@ const config: Config = {
         primary: '#',
         secondary: '#',
         tertiary: '#F55157',
-        
+        dark: '#333333',
         orange: {
           main: '#f58634'
          

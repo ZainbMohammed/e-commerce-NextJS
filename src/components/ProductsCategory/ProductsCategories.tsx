@@ -42,7 +42,7 @@ const ProductsCategories = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 gap-y-8 px-16 py-8">
       {products.map((product, index) => (
         <Product
           key={index}
