@@ -91,20 +91,16 @@ const Footer = () => {
 
   return (
     <footer className='bg-white border-t'>
-      <div className='container mx-auto px-6 lg:px-4 py-10 md:py-14'>
+      <div className='container mx-auto px-6 lg:px-10 py-5 md:py-14'>
         <div className='flex flex-col md:flex-row items-start justify-between gap-8 md:gap-14'>
 
           {/* Logo Section */}
         
           <div className="flex justify-center items-center">
         <Image alt="logo" className="w-20" src={Logo} width={54} height={43} />
-        {/* <span className='size-5 p-2.5 font-bold'>
-          متجـــــر<br></br>فاست{" "}
-        </span> */}
       </div>
-
           {/* Footer Links Section */}
-          <div className='flex flex-wrap w-full gap-10 md:gap-16 lg:gap-20'>
+          <div className='flex flex-wrap w-full gap-10 md:gap-16 lg:gap-15'>
 
             {/* Footer Links */}
             {FOOTER_LINLS.map((col) => (
@@ -112,7 +108,7 @@ const Footer = () => {
                 <ul className='flex flex-col gap-3'>
                   {col.links.map((link, index) => (
                     <li key={index}>
-                      <Link href='/' className='text-sm md:text-base text-gray-600 hover:text-gray-800'>
+                      <Link href='/' className='text-sm md:text-base text-gray-600 hover:text-orange-main'>
                         {link}
                       </Link>
                     </li>
@@ -139,7 +135,13 @@ const Footer = () => {
                 {SOCIALS.links.map((link) => (
                   <li key={link}>
                     <Link href='/'>
-                      <Image src={link} alt='socialIcon' height={24} width={24} />
+                      <Image 
+                        src={link} 
+                        alt='socialIcon' 
+                        height={30} 
+                        width={30} 
+                        className='hover:text-orange-main'
+                      />
                     </Link>
                   </li>
                 ))}
@@ -150,7 +152,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className='mt-10 border-t pt-6 text-center'>
-          <p className='text-sm text-gray-500'>2024 © الحقوق محفوظة لمنصة فاست</p>
+          <p className='text-sm text-gray-500'>جميع الحقوق محفوظة لمنصة فاست @ 2024</p>
         </div>
       </div>
     </footer>
