@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Slide1 from '../../../public/sliderImages/slide1.png'
-import Slide2 from '../../../public/sliderImages/slide1.png'
+import Slide2 from '../../../public/sliderImages/slide2.jpeg'
 import Slide3 from '../../../public/sliderImages/slide1.png'
 const Slider = () => {
   const slides = [
@@ -13,8 +13,8 @@ const Slider = () => {
     },
     {
         image: Slide2,
-        title: 'تخفيضات الصيف 2024',
-      description: 'تسوق واستمتع بأفضل العروض الصيفية',
+        title: '',
+      description: '',
     },
     {
         image: Slide3,

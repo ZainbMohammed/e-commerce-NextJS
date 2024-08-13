@@ -24,7 +24,6 @@ const Home = () => {
       <ProductGrid />
       <StoreSlider />
       <FeaturesSection />
-      {/* Add other components here as needed */}
       <Footer />
     </div>
   );

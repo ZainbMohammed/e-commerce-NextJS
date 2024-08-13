@@ -30,13 +30,14 @@ const CategoryCards = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-between md:justify-center gap-4 mt-8 ml-20 mr-20">
+    <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 sm:px-8 md:px-12">
       {categories.map((category, index) => (
         <Cards
           key={index}
           title={category.title}
           imageSrc={category.imageSrc}
           altText={category.altText}
+          // className="w-full sm:w-1/2 md:w-1/4" // Adjust size based on screen width
         />
       ))}
     </div>

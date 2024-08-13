@@ -30,20 +30,20 @@ const features: Feature[] = [
 
 const FeatureSection = () => {
   return (
-    <div className="container  mx-auto px-4 py-8">
-      <div className="w-[1200px] h-[123px] flex justify-center border space-x-0 lg:space-x-4">
+    <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col lg:flex-row justify-center border space-y-4 lg:space-y-0 lg:space-x-4">
         {features.map((feature, index) => (
           <React.Fragment key={index}>
-            <div className="flex justify-center  p-4 text-center lg:w-1/3">
+            <div className="flex justify-center p-4 text-center lg:w-1/3">
               <Image
                 src={feature.icon}
                 alt={feature.title}
                 width={40}
                 height={40}
               />
-              <div className='flex flex-col items-start mr-5'>
-              <h3 className="text-xl font-bold mt-5">{feature.title}</h3>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
+              <div className="flex flex-col items-start mr-5">
+                <h3 className="text-xl font-bold mt-5">{feature.title}</h3>
+                <p className="text-gray-600 mt-2">{feature.description}</p>
               </div>
             </div>
             {index < features.length - 1 && (

@@ -42,15 +42,17 @@ const ProductsCategories = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 gap-y-8 px-16 py-8">
-      {products.map((product, index) => (
-        <Product
-          key={index}
-          imageSrc={product.imageSrc}
-          title={product.title}
-          count={product.count}
-        />
-      ))}
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 gap-y-6">
+        {products.map((product, index) => (
+          <Product
+            key={index}
+            imageSrc={product.imageSrc}
+            title={product.title}
+            count={product.count}
+          />
+        ))}
+      </div>
     </div>
   );
 };

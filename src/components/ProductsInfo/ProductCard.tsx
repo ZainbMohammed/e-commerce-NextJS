@@ -38,7 +38,7 @@ const ProductCard = ({
       <Image
         src={image}
         alt={title}
-        className="w-full h-48 object-cover rounded-md"
+        className="w-full h-48 object-contain rounded-md"
       />
       <div className="mt-4">
         <h3 className="text-sm text-orange-main font-extrabold">{category}</h3>

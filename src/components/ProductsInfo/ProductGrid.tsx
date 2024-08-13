@@ -10,6 +10,7 @@ import iphone2 from "../../../public/ProductsImages/iphone2.svg";
 import ipad from "../../../public/ProductsImages/ipad.svg";
 import android from "../../../public/ProductsImages/android.svg";
 import headPhones from "../../../public/ProductsImages/head-phones.svg";
+import headPhones2 from "../../../public/ProductsImages/head-phones2.jpg";
 import earPhones from "../../../public/ProductsImages/ear-phones.svg";
 import spekras from "../../../public/ProductsImages/spe.svg";
 
@@ -42,7 +43,7 @@ const products = [
     oldPrice: 350.00,
   },
   {
-    image: spekras,
+    image: headPhones2,
     discountLabel: "25% خصم",
     title: "سماعة ساوند كور كيو30 فوق الاذن",
     description: "سماعة ذات صوت عالي الدقة",
