@@ -80,7 +80,11 @@ import playStoreIcon from "../../../public/CategoryImages/shopping-bag.svg"; // 
 import SubscriptionSection from "./SubscriptionSection";
 import SocialMedia from './SocialMedia'
 const Footer = () => {
-  const FooterColumn = ({ title, children }) => {
+  type FooterColumnProps = {
+    title:string
+    children:any
+  } 
+  const FooterColumn = ({ title, children }:FooterColumnProps) => {
     return (
       <div className='flex flex-col gap-4 md:gap-6'>
         <h4 className='font-bold text-lg md:text-xl'>{title}</h4>
