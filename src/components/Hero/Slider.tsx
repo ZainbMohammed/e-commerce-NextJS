@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Slide1 from '../../../public/sliderImages/slide1.png'
 import Slide2 from '../../../public/sliderImages/slide2.jpeg'
 import Slide3 from '../../../public/sliderImages/slide1.png'
+
 const Slider = () => {
   const slides = [
     {
@@ -61,10 +62,10 @@ const Slider = () => {
       {/* Slider controls */}
       <button
         type="button"
-        className="absolute top-0 left-20 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute top-1/2 left-4 md:left-20 z-30 flex items-center justify-center h-8 w-8 md:h-10 md:w-10 transform -translate-y-1/2 cursor-pointer group focus:outline-none"
         onClick={prevSlide}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  border border-orange-300 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <span className="inline-flex items-center justify-center w-full h-full rounded-full border border-orange-300 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
           <svg className="w-4 h-4 text-orange-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
           </svg>
@@ -73,10 +74,10 @@ const Slider = () => {
       </button>
       <button
         type="button"
-        className="absolute top-0 right-20 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
+        className="absolute top-1/2 right-4 md:right-20 z-30 flex items-center justify-center h-8 w-8 md:h-10 md:w-10 transform -translate-y-1/2 cursor-pointer group focus:outline-none"
         onClick={nextSlide}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-orange-300 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <span className="inline-flex items-center justify-center w-full h-full rounded-full border border-orange-300 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
           <svg className="w-4 h-4 text-orange-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
           </svg>

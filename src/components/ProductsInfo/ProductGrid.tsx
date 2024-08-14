@@ -125,18 +125,18 @@ const products = [
 
 const ProductGrid = () => {
   return (
-    <section className="my-8 px-20">
-      <div className="flex justify-between items-center mb-8">
-        <div className="container mx-auto  ">
-          <h2 className="text-2xl font-bold mb-4">جميع المنتجات</h2>
-          <p className="text-gray-extr-light">
-            تسوق احدث المنتجات المميزه المضافة جديد
-          </p>
-        </div>
-        <button className="w-[109px] h-[42px] text-orange-main font-bold border border-orange-main rounded-md hover:bg-orange-main hover:text-white transition">
-          عرض الكل
-        </button>
-      </div>
+    <section className="my-8 px-4 sm:px-10 lg:px-20">
+  <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
+    <div className="text-center lg:text-left mb-4 lg:mb-0">
+      <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">جميع المنتجات</h2>
+      <p className="text-gray-extr-light text-sm sm:text-base">
+        تسوق احدث المنتجات المميزه المضافة جديد
+      </p>
+    </div>
+    <button className="w-[109px] h-[42px] text-orange-main font-bold border border-orange-main rounded-md hover:bg-orange-main hover:text-white transition">
+      عرض الكل
+    </button>
+  </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
           <ProductCard key={index} {...product} />
